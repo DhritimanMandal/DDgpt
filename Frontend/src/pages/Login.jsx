@@ -23,7 +23,7 @@ const Login = () => {
 
     axios
       .post(
-        "http://localhost:3000/api/auth/login",
+        "https://ddgpt-4eog.onrender.com/api/auth/login",
         {
           email: form.email,
           password: form.password,
