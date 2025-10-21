@@ -1,5 +1,35 @@
 @import url('./styles/theme.css');
 
+/* Color palette adjustments for dark theme */
+:root {
+  --color-bg: #181818; /* Dark background color */
+  --color-bg-alt: #222222; /* Slightly lighter background for inputs */
+  --color-text: #e0e0e0; /* Light text color */
+  --color-text-muted: #a0a0a0; /* Muted text color for subtexts */
+  --color-primary: #3b82f6; /* Primary color (blue) */
+  --color-primary-hover: #2563eb; /* Hover color for primary */
+  --color-surface: #2d2d2d; /* Surface color for cards */
+  --color-border: #444444; /* Border color */
+  --color-focus-ring: rgba(59, 130, 246, 0.5); /* Focus ring color */
+  --shadow-sm: rgba(0, 0, 0, 0.3) 0px 4px 12px; /* Subtle shadow */
+  
+  /* For consistency across both themes */
+  --font-sans: 'Arial', sans-serif;
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --text-sm: 0.875rem;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.375rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --transition-fast: 0.2s ease-in-out;
+}
+
+/* Global Styles */
 * {
   box-sizing: border-box;
 }
@@ -16,8 +46,7 @@ body {
   color: var(--color-text);
   -webkit-font-smoothing: antialiased;
   line-height: 1.5;
-  color-scheme: light dark;
-  /* hint native UI */
+  color-scheme: dark;
 }
 
 a {
@@ -174,8 +203,6 @@ button.primary-btn:disabled {
 .auth-alt a {
   font-weight: var(--font-weight-medium);
 }
-
-/* Theme toggle removed since system preference is used */
 
 /* Smooth theme transition */
 html {
